@@ -8,6 +8,7 @@ var ytmus = require('./server/routers/ytmus');
 var instagram = require('./server/routers/IG');
 var film = require('./server/routers/film');
 var twvid = require('./server/routers/twvid');
+var nekopoi = require('./server/routers/nekopoi');
 var twimg = require('./server/routers/twimg');
 
 var app = express();
@@ -35,6 +36,7 @@ app.use('/ytmus', ytmus);
 app.use('/ig', instagram);
 app.use('/twimg', twimg);
 app.use('/twvid', twvid);
+app.use('/nekopoi', nekopoi);
 app.use('/film', film);
 
 app.listen(PORT, () => {
